@@ -1,0 +1,140 @@
+gurlchecker
+------------------------------------------
+gURLChecker is a graphical web links checker for the GNOME desktop. 
+It can work on a whole site, a single local page or a browser
+bookmarks file.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+  GConf2-2.12.1-1
+  gnet2-2.0.7-1
+  gtk2-x11-runtime-2.6.10-1
+  libglade2-2.5.1-1
+  libgnome2-2.12.0.1-1
+  libgnomeui2-2.12.0-1
+  libgnutls11-1.0.25-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.18-1
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  gtk-doc-1.3-1
+  intltool-0.33-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkgconfig-0.17.2-2
+  sed-4.1.4-1
+
+Canonical website:
+  http://gurlchecker.labs.libre-entreprise.org/
+
+Canonical download:
+  http://labs.libre-entreprise.org/frs/?group_id=7
+
+-------------------------------------------
+
+Build instructions:
+  unpack gurlchecker-0.8.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./gurlchecker-0.8.3-X.sh all
+
+This will create:
+  /usr/src/gurlchecker-0.8.3-X-src.tar.bz2
+  /usr/src/gurlchecker-0.8.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gurlchecker.exe
+  /usr/share/applications/gurlchecker.desktop
+  /usr/share/doc/Cygwin/gurlchecker-0.8.3.README
+  /usr/share/doc/gurlchecker-0.8.3/ABOUT-NLS
+  /usr/share/doc/gurlchecker-0.8.3/AUTHORS
+  /usr/share/doc/gurlchecker-0.8.3/ChangeLog
+  /usr/share/doc/gurlchecker-0.8.3/COPYING
+  /usr/share/doc/gurlchecker-0.8.3/FAQ
+  /usr/share/doc/gurlchecker-0.8.3/INSTALL
+  /usr/share/doc/gurlchecker-0.8.3/NEWS
+  /usr/share/doc/gurlchecker-0.8.3/README
+  /usr/share/doc/gurlchecker-0.8.3/THANKS
+  /usr/share/doc/gurlchecker-0.8.3/TODO
+  /usr/share/gtk-doc/html/gurlchecker/ch01.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-application.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-bookmarks.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-cache.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-callbacks.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-check.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-connection.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-general.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-html-parser.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-lists.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-project.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-report.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-search.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-timeout.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-tooltips.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-url.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-utils.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-web-site.html
+  /usr/share/gtk-doc/html/gurlchecker/gurlchecker.devhelp
+  /usr/share/gtk-doc/html/gurlchecker/index.html
+  /usr/share/gtk-doc/html/gurlchecker/index.sgml
+  /usr/share/gurlchecker/ui/gurlchecker.glade
+  /usr/share/gurlchecker/ui/gurlchecker.png
+  /usr/share/gurlchecker/ui/gurlchecker_icon.png
+  /usr/share/gurlchecker/ui/link_status_bad.png
+  /usr/share/gurlchecker/ui/link_status_file_error.png
+  /usr/share/gurlchecker/ui/link_status_good.png
+  /usr/share/gurlchecker/ui/link_status_ignored.png
+  /usr/share/gurlchecker/ui/link_status_mail_bad.png
+  /usr/share/gurlchecker/ui/link_status_mail_good.png
+  /usr/share/gurlchecker/ui/link_status_malformed.png
+  /usr/share/gurlchecker/ui/link_status_nodata.png
+  /usr/share/gurlchecker/ui/link_status_restricted.png
+  /usr/share/gurlchecker/ui/link_status_timeout.png
+  /usr/share/gurlchecker/ui/link_type_css.png
+  /usr/share/gurlchecker/ui/link_type_css_ssl.png
+  /usr/share/gurlchecker/ui/link_type_folder.png
+  /usr/share/gurlchecker/ui/link_type_frame.png
+  /usr/share/gurlchecker/ui/link_type_frame_ssl.png
+  /usr/share/gurlchecker/ui/link_type_href.png
+  /usr/share/gurlchecker/ui/link_type_href_ftp.png
+  /usr/share/gurlchecker/ui/link_type_href_local.png
+  /usr/share/gurlchecker/ui/link_type_href_ssl.png
+  /usr/share/gurlchecker/ui/link_type_image.png
+  /usr/share/gurlchecker/ui/link_type_image_local.png
+  /usr/share/gurlchecker/ui/link_type_image_ssl.png
+  /usr/share/gurlchecker/ui/link_type_mail.png
+  /usr/share/gurlchecker/ui/link_type_unknown.png
+  /usr/share/gurlchecker/ui/menu_new_bookmarks_file.png
+  /usr/share/gurlchecker/ui/menu_new_local_file.png
+  /usr/share/gurlchecker/ui/menu_new_web_site.png
+  /usr/share/gurlchecker/ui/menu_protocol_ftp.png
+  /usr/share/gurlchecker/ui/menu_protocol_https.png
+  /usr/share/locale/da/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/de/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/eo/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/es/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/fr/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/it/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/ja/LC_MESSAGES/gurlchecker.mo
+  /usr/share/locale/sk/LC_MESSAGES/gurlchecker.mo
+  /usr/share/pixmaps/gurlchecker.png
+
+------------------
+
+Port Notes:
+
+----- version 0.8.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
