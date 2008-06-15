@@ -1,5 +1,5 @@
 category: Gnome Web
-requires: cygwin GConf2 glib2 gnet2 gtk2-x11 libclamav2 libcroco06 libglade2 libgnome2 libgnomeui2 libgnutls13 libintl8 libtidy0_99_0 libxml2 minires
+requires: cygwin GConf2 glib2 gnet2 gtk2-x11 libclamav3 libcroco06 libglade2 libgnome2 libgnomeui2 libgnutls26 libintl8 libtidy0_99_0 libxml2 minires
 sdesc: "GNOME web links verifier"
 ldesc: "gURLChecker is a graphical web links checker for the GNOME
 desktop. It can work on a whole site, a single local page or a browser
