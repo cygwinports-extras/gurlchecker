@@ -5,13 +5,13 @@ It can work on a whole site, a single local page or a browser
 bookmarks file.
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.9-1
+  gdk-pixbuf2-2.12.10-1
   glib2-2.16.3-1
   gnet2-2.0.8-1
-  gtk2-x11-2.12.9-1
-  libclamav3-0.92.1-1
+  gtk2-x11-2.12.10-1
+  libclamav4-0.93-1
   libcroco06-0.6.1-1
   libglade2-2.6.2-1
   libgnome2-2.22.0-1
@@ -27,14 +27,14 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gtk-doc-1.10-1
   intltool-0.37.1-1
   libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -146,6 +146,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.10.2-3 -----
+Rebuilt with Gentoo patch for ClamAV 0.93.
 
 ----- version 0.10.2-2 -----
 Rebuilt for updated dependencies.
