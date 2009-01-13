@@ -1,0 +1,31 @@
+--- origsrc/gurlchecker-0.10.2/configure.in	2008-07-06 16:11:57.234375000 -0500
++++ src/gurlchecker-0.10.2/configure.in	2008-07-06 16:11:59.593750000 -0500
+@@ -319,6 +319,13 @@
+ AC_SUBST(GNUTLS_LIBS)
+ AC_SUBST(GNUTLS_FLAGS)
+ 
++################################################
++# docbook stuff (for manpage)
++################################################
++
++AC_CHECK_PROGS(DB2MAN, [docbook-to-man db2man docbook2man], :)
++AM_CONDITIONAL(ENABLE_MANPAGE, test "x$DB2MAN" != "x:")
++
+ echo "*****************************************"
+ 
+ PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+--- origsrc/gurlchecker-0.10.2/man/Makefile.am	2006-12-28 02:47:09.000000000 -0600
++++ src/gurlchecker-0.10.2/man/Makefile.am	2008-07-06 16:11:59.609375000 -0500
+@@ -7,8 +7,11 @@
+ 
+ MAINTAINERCLEANFILES = Makefile.in
+ 
++if ENABLE_MANPAGE
++
+ man1_MANS = gurlchecker.1
+ 
+ gurlchecker.1 : make-doc gurlchecker.sgml
+-	./$^ $@
++	${srcdir}/make-doc ${srcdir}/gurlchecker.sgml $@
+ 
++endif

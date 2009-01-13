@@ -6,33 +6,33 @@ bookmarks file.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.10-1
-  glib2-2.16.3-1
-  gnet2-2.0.8-1
-  gtk2-x11-2.12.10-1
-  libclamav4-0.93-1
-  libcroco06-0.6.1-1
-  libglade2-2.6.2-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libgnutls26-2.2.2-1
-  libintl8-0.15-1
-  libtidy0_99_0-20071106-1
-  libxml2-2.6.32-1
-  minires-1.01-1
+  libclamav5-0.94.2-1
+  libcroco0.6_3-0.6.1-2
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.3-1
+  libgnet2.0_0-2.0.8-2
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgnutls26-2.4.1-1
+  libgtk2.0_0-2.14.6-1
+  libintl8-0.17-2
+  libtidy0_99_0-20080811-1
+  libxml2-2.7.2-1
+  minires-1.02-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.10-1
-  intltool-0.37.1-1
-  libtool-2.2.2-2
+  gtk-doc-1.11-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -146,6 +146,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.10.2-4 -----
+Rebuilt for ClamAV 0.94.
 
 ----- version 0.10.2-3 -----
 Rebuilt with Gentoo patch for ClamAV 0.93.

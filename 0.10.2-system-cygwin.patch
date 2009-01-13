@@ -1,0 +1,15 @@
+--- origsrc/gurlchecker-0.10.2/src/general.h	2007-10-07 03:17:35.000000000 -0500
++++ src/gurlchecker-0.10.2/src/general.h	2008-07-06 16:11:59.625000000 -0500
+@@ -67,8 +67,12 @@
+  *
+  * Macro to determine the system we are running on.
+  */
++#if defined(__linux__) || defined(__CYGWIN__)
+ #ifdef __linux__
+ #define UC_SYSTEM_NAME "Linux"
++#elif __CYGWIN__
++#define UC_SYSTEM_NAME "Cygwin"
++#endif
+ #include <sys/vfs.h>
+ #elif defined(__NetBSD__) || defined(__OpenBSD__) || defined(__FreeBSD__)
+ #ifdef __NetBSD__

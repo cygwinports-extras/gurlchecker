@@ -6,7 +6,11 @@ rel=623
 DESCRIPTION="GNOME webpage link checker"
 HOMEPAGE="http://gurlchecker.labs.libre-entreprise.org/"
 SRC_URI="http://labs.libre-entreprise.org/frs/download.php/${rel}/${P}.tar.gz"
-PATCH_URI="mirror://portage/www-misc/${PN}/files/${P}-configure.in.patch"
-#          mirror://portage/www-misc/${PN}/files/${P}-clamav093.patch
+PATCH_URI="
+	mirror://portage/www-misc/${PN}/files/${P}-configure.in.patch
+	0.10.2-db2man.patch
+	0.10.2-clamav093.patch
+	0.10.2-system-cygwin.patch
+"
 
 DIFF_EXCLUDES="doc"
