@@ -6,35 +6,36 @@ bookmarks file.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libclamav5-0.94.2-1
-  libcroco0.6_3-0.6.1-2
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.6-1
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.3-1
-  libgnet2.0_0-2.0.8-2
-  libgnome2_0-2.24.1-1
-  libgnomeui2_0-2.24.0-1
+  libcroco0.6_3-0.6.1-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.0-1
+  libgnet2.0_0-2.0.8-10
+  libgnome2_0-2.26.0-1
+  libgnomeui2_0-2.24.1-1
   libgnutls26-2.4.1-1
-  libgtk2.0_0-2.14.6-1
-  libintl8-0.17-2
-  libtidy0_99_0-20080811-1
-  libxml2-2.7.2-1
-  minires-1.02-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libtidy0_99_0-20090325-1
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gtk-doc-1.11-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  docbook-sgml41-4.1-1
+  docbook-utils-0.6.9-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gtk-doc-1.11-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -46,15 +47,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gurlchecker-0.10.2-X-src.tar.bz2
+  unpack gurlchecker-0.10.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gurlchecker-0.10.2-X.cygport all
+  cygport ./gurlchecker-0.10.5-X.cygport all
 
 This will create:
-  /usr/src/gurlchecker-0.10.2-X-src.tar.bz2
-  /usr/src/gurlchecker-0.10.2-X.tar.bz2
+  /usr/src/gurlchecker-0.10.5-X-src.tar.bz2
+  /usr/src/gurlchecker-0.10.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,17 +63,15 @@ Files included in the binary package:
 
   /usr/bin/gurlchecker.exe
   /usr/share/applications/gurlchecker.desktop
-  /usr/share/doc/gurlchecker-0.10.2/ABOUT-NLS
-  /usr/share/doc/gurlchecker-0.10.2/AUTHORS
-  /usr/share/doc/gurlchecker-0.10.2/CONTRIBUTORS
-  /usr/share/doc/gurlchecker-0.10.2/COPYING
-  /usr/share/doc/gurlchecker-0.10.2/ChangeLog
-  /usr/share/doc/gurlchecker-0.10.2/FAQ
-  /usr/share/doc/gurlchecker-0.10.2/INSTALL
-  /usr/share/doc/gurlchecker-0.10.2/NEWS
-  /usr/share/doc/gurlchecker-0.10.2/README
-  /usr/share/doc/gurlchecker-0.10.2/THANKS
-  /usr/share/doc/gurlchecker-0.10.2/TODO
+  /usr/share/doc/gurlchecker/AUTHORS
+  /usr/share/doc/gurlchecker/CONTRIBUTORS
+  /usr/share/doc/gurlchecker/COPYING
+  /usr/share/doc/gurlchecker/ChangeLog
+  /usr/share/doc/gurlchecker/FAQ
+  /usr/share/doc/gurlchecker/NEWS
+  /usr/share/doc/gurlchecker/README
+  /usr/share/doc/gurlchecker/THANKS
+  /usr/share/doc/gurlchecker/TODO
   /usr/share/gtk-doc/html/gurlchecker/ch01.html
   /usr/share/gtk-doc/html/gurlchecker/gurlchecker-application.html
   /usr/share/gtk-doc/html/gurlchecker/gurlchecker-bookmarks.html
@@ -141,29 +140,15 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/gurlchecker.mo
   /usr/share/locale/ja/LC_MESSAGES/gurlchecker.mo
   /usr/share/locale/sk/LC_MESSAGES/gurlchecker.mo
+  /usr/share/man/man1/gurlchecker.1.gz
   /usr/share/pixmaps/gurlchecker.png
 
 ------------------
 
 Port Notes:
 
------ version 0.10.2-4 -----
-Rebuilt for ClamAV 0.94.
-
------ version 0.10.2-3 -----
-Rebuilt with Gentoo patch for ClamAV 0.93.
-
------ version 0.10.2-2 -----
-Rebuilt for updated dependencies.
-
------ version 0.10.2-1 -----
-Version bump.
-
------ version 0.10.1-1 -----
-Long-overdue version bump.
-
------ version 0.8.3-1 -----
-Initial release for Cygwin.
+----- version 0.10.5-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
