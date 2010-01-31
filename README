@@ -5,35 +5,35 @@ It can work on a whole site, a single local page or a browser
 bookmarks file.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcroco0.6_3-0.6.1-10
-  libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.0-1
+  cygwin-1.7.1-1
+  libclamav6-0.95.3-1
+  libcroco0.6_3-0.6.2-10
+  libgcc1-4.3.4-3
+  libgconf2_4-2.28.0-1
+  libgdk_pixbuf2.0_0-2.18.6-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.22.4-2
   libgnet2.0_0-2.0.8-10
-  libgnome2_0-2.26.0-1
-  libgnomeui2_0-2.24.1-1
-  libgnutls26-2.4.1-1
-  libgtk2.0_0-2.16.0-1
-  libintl8-0.17-10
+  libgnome2_0-2.28.0-1
+  libgnomeui2_0-2.24.2-1
+  libgnutls26-2.8.3-1
+  libgtk2.0_0-2.18.6-1
+  libintl8-0.17-11
+  libsqlite3_0-3.6.21-3
   libtidy0_99_0-20090325-1
-  libxml2-2.7.3-10
+  libxml2-2.7.6-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  docbook-sgml41-4.1-1
-  docbook-utils-0.6.9-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gtk-doc-1.11-2
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gtk-doc-1.13-1
   intltool-0.40.6-1
-  libtool-2.2.7a-12
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -47,105 +47,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gurlchecker-0.10.5-X-src.tar.bz2
+  unpack gurlchecker-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gurlchecker-0.10.5-X.cygport all
+  cygport ./gurlchecker-0.12-X.cygport all
 
 This will create:
-  /usr/src/gurlchecker-0.10.5-X-src.tar.bz2
-  /usr/src/gurlchecker-0.10.5-X.tar.bz2
+  /usr/src/gurlchecker-0.12-X-src.tar.bz2
+  /usr/src/gurlchecker-0.12-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/gurlchecker.exe
-  /usr/share/applications/gurlchecker.desktop
-  /usr/share/doc/gurlchecker/AUTHORS
-  /usr/share/doc/gurlchecker/CONTRIBUTORS
-  /usr/share/doc/gurlchecker/COPYING
-  /usr/share/doc/gurlchecker/ChangeLog
-  /usr/share/doc/gurlchecker/FAQ
-  /usr/share/doc/gurlchecker/NEWS
-  /usr/share/doc/gurlchecker/README
-  /usr/share/doc/gurlchecker/THANKS
-  /usr/share/doc/gurlchecker/TODO
-  /usr/share/gtk-doc/html/gurlchecker/ch01.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-application.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-bookmarks.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-cache.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-callbacks.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-check.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-connection.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-general.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-html-parser.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-lists.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-project.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-report.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-search.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-timeout.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-tooltips.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-ucclam.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-uccroco.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-uctidy.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-url.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-utils.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker-web-site.html
-  /usr/share/gtk-doc/html/gurlchecker/gurlchecker.devhelp
-  /usr/share/gtk-doc/html/gurlchecker/index.html
-  /usr/share/gtk-doc/html/gurlchecker/index.sgml
-  /usr/share/gurlchecker/stylesheets/uc_html.xsl
-  /usr/share/gurlchecker/ui/empty_icon.png
-  /usr/share/gurlchecker/ui/gurlchecker.glade
-  /usr/share/gurlchecker/ui/gurlchecker.png
-  /usr/share/gurlchecker/ui/gurlchecker_icon.png
-  /usr/share/gurlchecker/ui/link_status_bad.png
-  /usr/share/gurlchecker/ui/link_status_file_error.png
-  /usr/share/gurlchecker/ui/link_status_good.png
-  /usr/share/gurlchecker/ui/link_status_ignored.png
-  /usr/share/gurlchecker/ui/link_status_mail_bad.png
-  /usr/share/gurlchecker/ui/link_status_mail_good.png
-  /usr/share/gurlchecker/ui/link_status_malformed.png
-  /usr/share/gurlchecker/ui/link_status_nodata.png
-  /usr/share/gurlchecker/ui/link_status_restricted.png
-  /usr/share/gurlchecker/ui/link_status_timeout.png
-  /usr/share/gurlchecker/ui/link_type_css.png
-  /usr/share/gurlchecker/ui/link_type_css_ssl.png
-  /usr/share/gurlchecker/ui/link_type_folder.png
-  /usr/share/gurlchecker/ui/link_type_frame.png
-  /usr/share/gurlchecker/ui/link_type_frame_ssl.png
-  /usr/share/gurlchecker/ui/link_type_href.png
-  /usr/share/gurlchecker/ui/link_type_href_ftp.png
-  /usr/share/gurlchecker/ui/link_type_href_local.png
-  /usr/share/gurlchecker/ui/link_type_href_ssl.png
-  /usr/share/gurlchecker/ui/link_type_image.png
-  /usr/share/gurlchecker/ui/link_type_image_local.png
-  /usr/share/gurlchecker/ui/link_type_image_ssl.png
-  /usr/share/gurlchecker/ui/link_type_mail.png
-  /usr/share/gurlchecker/ui/link_type_unknown.png
-  /usr/share/gurlchecker/ui/menu_new_bookmarks_file.png
-  /usr/share/gurlchecker/ui/menu_new_local_file.png
-  /usr/share/gurlchecker/ui/menu_new_web_site.png
-  /usr/share/gurlchecker/ui/menu_protocol_ftp.png
-  /usr/share/gurlchecker/ui/menu_protocol_https.png
-  /usr/share/gurlchecker/ui/security_alert.png
-  /usr/share/gurlchecker/ui/w3c_alert.png
-  /usr/share/locale/da/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/de/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/eo/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/es/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/fr/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/it/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/ja/LC_MESSAGES/gurlchecker.mo
-  /usr/share/locale/sk/LC_MESSAGES/gurlchecker.mo
-  /usr/share/man/man1/gurlchecker.1.gz
-  /usr/share/pixmaps/gurlchecker.png
-
-------------------
-
 Port Notes:
+
+----- version 0.12-1 -----
+Version bump.
 
 ----- version 0.10.5-1 -----
 Initial release for Cygwin 1.7.
