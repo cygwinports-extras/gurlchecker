@@ -1,15 +1,11 @@
 inherit gnome2
 
 # must be changed with every version :-(
-rel=764
+rel=857
 
 DESCRIPTION="GNOME webpage link checker"
 HOMEPAGE="http://gurlchecker.labs.libre-entreprise.org/"
 SRC_URI="http://labs.libre-entreprise.org/frs/download.php/${rel}/${P}.tar.gz"
-PATCH_URI="
-	0.10.2-system-cygwin.patch
-"
-
-#DIFF_EXCLUDES="doc"
+PATCH_URI="0.13.1-cygwin.patch"
 
 CYGCONF_ARGS="--disable-gtk-doc"
