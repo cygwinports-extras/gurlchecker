@@ -3,7 +3,13 @@ inherit gnome2
 # must be changed with every version :-(
 rel=857
 
-DESCRIPTION="GNOME webpage link checker"
+NAME="gurlchecker"
+VERSION=0.13.1
+RELEASE=2
+CATEGORY="Web"
+SUMMARY="GNOME webpage link checker"
+DESCRIPTION="gURLChecker is a graphical web links checker for the GNOME desktop.
+It can work on a whole site, a single local page or a browser bookmarks file."
 HOMEPAGE="http://gurlchecker.labs.libre-entreprise.org/"
 SRC_URI="http://labs.libre-entreprise.org/frs/download.php/${rel}/${P}.tar.gz"
 PATCH_URI="0.13.1-cygwin.patch"
